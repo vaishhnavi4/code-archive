@@ -13,8 +13,6 @@ public class Reverse {
             arr[i] = sc.nextInt();
         }
 
-        int n = arr.length;
-
         // This is just printing the values in reverse
         /*
          * System.out.println("----------Reverse Array-------");
@@ -25,7 +23,7 @@ public class Reverse {
 
         // Reversed within the memory location
         int start = 0;
-        int end = n - 1;
+        int end = arr.length - 1;
 
         while (start < end) {
 
@@ -39,7 +37,7 @@ public class Reverse {
 
         System.out.println("------------Reverse Array-----------");
 
-        for (int i = 0; i < n; ++i) {
+        for (int i = 0; i < arr.length; ++i) {
 
             System.out.print(arr[i] + " ");
         }

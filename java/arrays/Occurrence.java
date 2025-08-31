@@ -23,12 +23,12 @@ public class Occurrence {
             if (arr[i] == arr[i - 1]) {
                 count++;
             } else {
-                System.out.printf("%d--->%d\n", arr[i - 1], count);
+                System.out.println(arr[i - 1] + "------> " + count);
                 count = 1;
             }
         }
 
-        System.out.printf("%d--->%d\n", arr[i - 1], count);
+        System.out.println(arr[i - 1] + "------> " + count);
 
     }
 

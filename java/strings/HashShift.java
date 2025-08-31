@@ -1,6 +1,7 @@
 public class HashShift {
 
     public void moveHash(String str, int n) {
+
         String str1 = "";
         String str2 = "";
 
@@ -11,8 +12,10 @@ public class HashShift {
             else
                 str2 = str2 + str.charAt(i);
         }
-        String result = str1.concat(str2);
-        System.out.println(result);
+
+        String res = str1.concat(str2);
+
+        System.out.println(res);
     }
 
     public static void main(String[] args) {
@@ -23,7 +26,31 @@ public class HashShift {
         int n = str.length();
         h.moveHash(str, n);
 
+        /* Siya ka Approach */
+
+        // String str = "##move#";
+        // int n = str.length();
+        // int size = 0;
+
+        // char[] a = new char[n];
+        // int i;
+
+        // for (i = 0; i < n; i++) {
+        // if (str.charAt(i) == '#') {
+        // a[size++] = str.charAt(i);
+        // }
+        // }
+        // for (i = 0; i < n; i++) {
+        // if (str.charAt(i) != '#') {
+        // a[size++] = str.charAt(i);
+        // }
+        // }
+        // for (int j = 0; j < size; j++) {
+        // System.out.print(a[j]);
+        // }
+
     }
+
 }
 
 /*
@@ -41,4 +68,5 @@ public class HashShift {
  * 
  * Output:
  * ###MoveHashtoFront
+ * 
  */
